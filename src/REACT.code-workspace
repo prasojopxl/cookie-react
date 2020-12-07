@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../dasar"
+		},
+		{
+			"path": "../../../basic-js"
+		}
+	],
+	"settings": {}
+}
