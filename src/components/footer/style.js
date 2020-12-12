@@ -1,7 +1,6 @@
-import style from "styled-components";
+import styled from "styled-components";
 
-export const ContainerFooter = style.div `
-    max-width:1000px;
+export const ContainerFooter = styled.div `
     margin: 0 auto;
     background:#F0FFF0;
     width:100%;

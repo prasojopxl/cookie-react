@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import {MainStyle, Content} from "../assets/css";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 import { MainBaner } from '../assets/css/style';
+import ProductSlider from "../components/productslider";
+import Services from "../components/services";
+import Order from "../components/order";
+
 import cookie from "../assets/images/imgbaner-home.png";
 
 
@@ -12,6 +15,7 @@ class Home extends Component {
             <React.Fragment>
                 <ReactFullpage
                     navigation
+                    licenseKey = {'YOUR_KEY_HERE'}
                     autoScrolling= {false}
                     fitToSection={false}
                     render={({ state, fullpageApi }) => {
@@ -24,7 +28,7 @@ class Home extends Component {
                                             <div className="left">
                                                 <h4>GREAT CAKE</h4>
                                                 <h3>COME <span>TO EAT</span></h3>
-                                                <a href="#" className="btn small">visit</a>
+                                                <div className="btn small">visit</div>
                                             </div>
                                             <div className="right">
                                                 <img src={cookie}  alt="" className="lbounce"/>
@@ -32,11 +36,15 @@ class Home extends Component {
                                         </div>                                        
                                     </MainBaner>
                                 </div>
+
+                                <ProductSlider/>
+                                <Services/>
+                                <Order/>
+
                             </React.Fragment>
                         );
                     }}
                 />
-                <MainStyle>jhgv</MainStyle>
 
 
             </React.Fragment>

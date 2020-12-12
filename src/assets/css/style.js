@@ -1,17 +1,20 @@
-import style from "styled-components";
-import {fontLato, bgCover} from "./index"; 
+import styled from "styled-components";
+import {fontPoppins, bgCover, maxWidth, colorBrown, gap2} from "./index"; 
 import bgMainBaner from "../images/bgmainbaner.jpg";
 
-export const MainBaner = style.div `
+export const MainBaner = styled.div `
     background-image: url(${bgMainBaner});
     display: flex;
     ${bgCover}
 	width: 100%;
 	height: 100%;
 	.content {
+		max-width: ${maxWidth}; 
 		margin: 110px auto 0 auto;
 		width: 100%;
 		display: flex;
+		padding-left:15px;
+		padding-right:15px;
 		align-items: center;
 		justify-content: space-between;
 	}
@@ -34,14 +37,14 @@ export const MainBaner = style.div `
 	}
 	h4 {
 		font-size: 28px;
-		color: @color-brown;
+		color: ${colorBrown};
 		margin: 0;
 	}
 	h3 {
 		position: relative;
 		font-size: 71px;
 		font-weight: 500;
-		font-family: @font-Poppins;
+		font-family: ${fontPoppins};
 		margin-bottom: 20px;
 		z-index: 1;
 		span{
@@ -61,4 +64,14 @@ export const MainBaner = style.div `
 	}
 
 
+`
+
+export const SpecialProduct = styled.div`
+	margin: ${gap2} 0;
+	.content {
+		max-width:${maxWidth};
+		margin:0 auto;
+		padding: 0 15px;
+		text-align:center;
+	}
 `

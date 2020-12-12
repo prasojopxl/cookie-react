@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from '../../assets/images/logo.svg';
-import {ContainerHeader, Left, Right} from "./style"
+import {ContainerHeader, LeftHeader, RightHeader} from "./style"
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import {Content} from "../../assets/css";
 
@@ -18,20 +18,22 @@ export default class Header extends Component {
         return (
             <Router>
                 <ContainerHeader>
-                        <Left>
-                            <Link to="/"><img src={logo} alt=""/>LOREM IPSUM</Link>
-                        </Left>
-                        <Right>                        
-                            <div className="mainmenu">
-                                <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/products">Products</Link></li>
-                                    <li><Link to="/blog">Blog</Link></li>
-                                    <li><Link to="/contact">Contact Us</Link></li>
-                                </ul>
-                            </div>
-                        </Right>          
+                    <Content>
+                        <div className="mainmenu">
+                            <LeftHeader>
+                                <Link to="/"><img src={logo} alt=""/>LOREM IPSUM</Link>
+                            </LeftHeader>
+                            <RightHeader>                        
+                                    <ul>
+                                        <li><Link to="/">Home</Link></li>
+                                        <li><Link to="/about">About</Link></li>
+                                        <li><Link to="/products">Products</Link></li>
+                                        <li><Link to="/blog">Blog</Link></li>
+                                        <li><Link to="/contact">Contact Us</Link></li>
+                                    </ul>
+                            </RightHeader>       
+                        </div>
+                    </Content>   
                 </ContainerHeader>
 
 
