@@ -8,7 +8,7 @@ class Main extends Component {
         return (
             <React.Fragment>
                 <Header/>
-                    <GlobalStyle/>            
+                <GlobalStyle/>            
                 <Footer/>
             </React.Fragment>
         )

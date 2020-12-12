@@ -5,6 +5,9 @@ import { MainBaner } from '../assets/css/style';
 import ProductSlider from "../components/productslider";
 import Services from "../components/services";
 import Order from "../components/order";
+import ProductList from "../components/productlist";
+import Baker from "../components/baker";
+import Testimoni from "../components/testimoni"
 
 import cookie from "../assets/images/imgbaner-home.png";
 
@@ -40,6 +43,10 @@ class Home extends Component {
                                 <ProductSlider/>
                                 <Services/>
                                 <Order/>
+                                <ProductList/>
+                                <Baker/>
+                                <Testimoni/>
+                                
 
                             </React.Fragment>
                         );

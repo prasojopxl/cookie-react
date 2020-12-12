@@ -1,9 +1,11 @@
 import "./bootstrap.min.css";
 import "./reset.css";
+import "./fonts.css";
 
 import styled from "styled-components";
 // import {globalFont} from "./fonts";
 import {createGlobalStyle} from "styled-components";
+
 
 export const colorPink     = "#ff9faf";
 export const colorPink2    = "#FFF1F4";
@@ -98,7 +100,6 @@ export const Title = styled.div`
 
 
 export const GlobalStyle = createGlobalStyle `
-    globalFont,
     body {
         color: ${colorBlack};
         font-size: 16px;
