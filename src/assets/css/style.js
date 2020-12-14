@@ -62,7 +62,13 @@ export const MainBaner = styled.div `
 			}
 		}	
 	}
+	.hidden-xs {
+		display: block;
+	}
 
+	.visible-xs {
+		display: none;
+	}
 
 `
 

@@ -184,7 +184,14 @@ export const GlobalStyle = createGlobalStyle `
             border-radius: 30px;
         }
 
-    }    
+    }  
+    .hidden-xs {
+        display: block;
+    }
+
+    .visible-xs {
+        display: none;
+    }      
 `
 
 

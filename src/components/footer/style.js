@@ -5,7 +5,7 @@ import bgfooter from "../../assets/images/bgfooter.jpg";
 
 export const ContainerFooter = styled.div `
     background: url(${bgfooter}) center;
-    background:${bgCover};
+    ${bgCover};
 	.mainlogo {
 		font-size: 22px;
 		font-family: ${fontPoppins};
@@ -13,8 +13,14 @@ export const ContainerFooter = styled.div `
 		margin-bottom: 20px;
 		display: block;
 	}
+	.flex-center {
+		display:flex;
+		align-items:center;
+		margin-bottom:0px;
+	}
 	.logo {
 		width: 43px;
+		margin-right:5px;
 	}
 	.content {
 		font-family: ${fontLato};
