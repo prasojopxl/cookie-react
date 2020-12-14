@@ -7,8 +7,9 @@ import {Content} from "../../assets/css";
 import Home from "../../pages/home";
 import About from "../../pages/about";
 import Products from "../../pages/products";
-import Blog from "../../pages/blog";
+import BlogSingle from "../../pages/blogsingle";
 import Contact from "../../pages/contact";
+import BlogSidebar from "../../pages/blogsidebar";
 // import Home from "../../Main";
 
 
@@ -28,7 +29,12 @@ export default class Header extends Component {
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/about">About</Link></li>
                                         <li><Link to="/products">Products</Link></li>
-                                        <li><Link to="/blog">Blog</Link></li>
+                                        <li className="submenu"><Link to="/single">Blog</Link>
+                                            <ul>
+                                                <li><Link to="/blogsingle">Single Page 1</Link></li>
+                                                <li><Link to="/blogsidebar">Single Page 2</Link></li>
+                                            </ul>                                        
+                                        </li>
                                         <li><Link to="/contact">Contact Us</Link></li>
                                     </ul>
                             </RightHeader>       
@@ -47,8 +53,11 @@ export default class Header extends Component {
                     <Route path="/products">
                         <Products/>
                     </Route>
-                    <Route path="/blog">
-                        <Blog/>
+                    <Route path="/blogsingle">
+                        <BlogSingle/>
+                    </Route>
+                    <Route path="/blogsidebar">
+                        <BlogSidebar/>
                     </Route>
                     <Route path="/">
                         <Home/>
