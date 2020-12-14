@@ -7,7 +7,10 @@ import Services from "../components/services";
 import Order from "../components/order";
 import ProductList from "../components/productlist";
 import Baker from "../components/baker";
-import Testimoni from "../components/testimoni"
+import Testimoni from "../components/testimoni";
+import Contact from "../components/contact";
+import News from "../components/news";
+import Partner from "../components/partner";
 
 import cookie from "../assets/images/imgbaner-home.png";
 
@@ -46,7 +49,9 @@ class Home extends Component {
                                 <ProductList/>
                                 <Baker/>
                                 <Testimoni/>
-                                
+                                <Contact/>
+                                <News/>
+                                <Partner/>
 
                             </React.Fragment>
                         );

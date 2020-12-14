@@ -54,18 +54,27 @@ export const ContainerTestimoni = styled.div `
 		align-self: center;
         text-align: center;
         z-index:1;
-        cursor: pointer;
+		cursor: pointer;
+		.slick-next, .slick-prev {
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			height:100%;
+			position:relative;
+		}
 		img {
 			margin: 0 auto;
 		}
 	}
+	.slick-arrow.slick-next {
+		margin-left:100px;
+	} 
 	.slick-prev {
-		border: ${colorOrange} solid 2px;
+		border: ${colorOrange} solid 1px;
 		background: none;
 	}
 	.slick-next {
-		border: ${colorOrange} solid 2px;
-		margin-left: 100px;
+		border: ${colorOrange} solid 1px;
 	}
 	.item-testimoi {
 		display: flex;

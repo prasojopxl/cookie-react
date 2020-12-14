@@ -46,6 +46,7 @@ export const Content =  styled.div`
     max-width: 1166px; 
     padding-left: 15px; 
     padding-right:15px;
+    width:100%;
 `
 
 export const Title = styled.div`
