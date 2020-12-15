@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import BanerPages from "../components/banerpages";
+import BlogSide from "../components/blogdetail/blogside"
 
 class BlogSidebar extends Component {
     render() {
         return (
-            <div>
-                This is contact Blog Sidebar
-            </div>
+            <React.Fragment>
+                <BanerPages subtitle="BLOG" title="Side Bar"/>
+                <BlogSide/>
+            </React.Fragment>
         )
     }
 }

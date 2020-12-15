@@ -29,7 +29,7 @@ export default class Header extends Component {
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/about">About</Link></li>
                                         <li><Link to="/products">Products</Link></li>
-                                        <li className="submenu"><Link to="/single">Blog</Link>
+                                        <li className="submenu"><Link to="/blogsingle">Blog</Link>
                                             <ul>
                                                 <li><Link to="/blogsingle">Single Page 1</Link></li>
                                                 <li><Link to="/blogsidebar">Single Page 2</Link></li>

@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import BanerPages from "../components/banerpages";
+import BlogDetail from '../components/blogdetail';
+
 
 class BlogSingle extends Component {
     render() {
         return (
-            <div>
-                This is contact Blog Single
-            </div>
+            <React.Fragment>
+                <BanerPages subtitle="BLOG" title="Single Page"/>
+                <BlogDetail/>
+            </React.Fragment>
         )
     }
 }

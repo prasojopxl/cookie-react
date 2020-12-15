@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Content, Title } from "../../assets/css";
 import {ContainerOurProduct} from "./style";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 import icecream from "../../assets/images/icecream-icon.svg";
 import cake from "../../assets/images/cake-icon.svg";
 import cake2 from "../../assets/images/cake2-icon.svg";
@@ -11,7 +12,8 @@ class OurProduct extends Component {
     render() {
         return (
             <ContainerOurProduct>
-                <Content>
+                <Router>
+                    <Content>
                     <Title>
                         <h5>LOREM IPSUM</h5>
                         <h3>Our Products</h3>
@@ -70,7 +72,7 @@ class OurProduct extends Component {
                                     <div className="contenttxt">
                                         <h6>FAST</h6>
                                         <h4>Delivery</h4>
-                                        <a href="#" className="btn small gray">Request</a>
+                                        <Link to="/" className="btn small gray">Request</Link>
                                     </div>
                                 </div>
                             </div>
@@ -79,13 +81,14 @@ class OurProduct extends Component {
                                     <div className="contenttxt">
                                         <h6>SPECIAL</h6>
                                         <h4>Package</h4>
-                                        <a href="#" className="btn small gray">View</a>
+                                        <Link to="/" className="btn small gray">Request</Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>                                      
                 </Content>
+                </Router>
             </ContainerOurProduct>
         )
     }

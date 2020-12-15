@@ -194,4 +194,29 @@ export const GlobalStyle = createGlobalStyle `
     }      
 `
 
+export const FormStyle = styled.div `
+	input[type="text"], input[type="email"], input[type="phone"], input[type="number"], input[type="password"] {
+		display: block;
+		background-color: ${colorGray4};
+		border: ${colorGray5} solid 1px;
+		width: 100%;
+		padding: 7px 25px;
+		box-sizing: border-box;
+		margin-bottom: 24px;
+	}
+	textarea {
+		display: block;
+		background-color: ${colorGray4};
+		border: ${colorGray5} solid 1px;
+		width: 100%;
+		padding: 7px 25px;
+		box-sizing: border-box;
+		margin-bottom: 24px;
+		min-height: 200px;
+	}
+	.btn {
+		border-radius: 50px;
+		padding: 12px 40px;
+	}
+`
 
